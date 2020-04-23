@@ -6,6 +6,7 @@ $black: #2e2e2e
 *
     margin: 0
     padding: 0
+    // border: 2px solid blue
 
 body
     font-family: 'Bebas Neue', Arial, Helvetica, sans-serif
@@ -42,14 +43,21 @@ section
 
         .twocolumns
             height: 100%
-            display: flex
-            flex-direction: row
+            // display: inline-flex
+            // flex-direction: row
+
+            display: grid
             justify-content: space-around
             align-items: center
+            grid-template-columns: auto auto
+            column-gap: 10em
 
             color: white
             
             .textbox
+                margin-left: 20%
+
+                grid-column: 1 / span 1
                 word-wrap: break-word
                 max-width: 50%
                 h1
@@ -62,10 +70,14 @@ section
                     padding-top: 1em
 
             .image
-                img
-                    width: 100px
-                    height: 100px
+                grid-column: 2 / span 1
 
+                max-width: 50%
+                max-height: 50%
+                padding: 0
+                img
+                    width: 100%
+                    height: 100%
 .nav
     display: flex
     flex-direction: row
@@ -97,7 +109,7 @@ section
             background-color: white
             &:hover
                 color: white
-                background-color: darken($red, 6)
+                background-color: #db4a4a
 
 .box
     // height: 85%
