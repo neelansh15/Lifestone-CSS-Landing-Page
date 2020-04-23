@@ -40,6 +40,32 @@ section
         background-color: $black
         color: lighten($black, 5)
 
+        .twocolumns
+            height: 100%
+            display: flex
+            flex-direction: row
+            justify-content: space-around
+            align-items: center
+
+            color: white
+            
+            .textbox
+                word-wrap: break-word
+                max-width: 50%
+                h1
+                    font-family: 'Merriweather', Arial, Helvetica, sans-serif
+                    font-weight: bold
+                    font-size: 3em
+                
+                p
+                    font-family: sans-serif
+                    padding-top: 1em
+
+            .image
+                img
+                    width: 100px
+                    height: 100px
+
 .nav
     display: flex
     flex-direction: row
