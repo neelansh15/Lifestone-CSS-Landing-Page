@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Merriweather:wght@400;700&display=swap')
+
+$red: #ec3f3f
+$black: #2e2e2e
+
+*
+    margin: 0
+    padding: 0
+
+body
+    font-family: 'Bebas Neue', Arial, Helvetica, sans-serif
+
+section
+    height: 100vh
+    &:nth-child(1)
+        background-color: $red
+    &:nth-child(2)      
+        background-color: $black
+        color: white
+
+.nav
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+    align-items: center
+    color: white
+
+    padding: 1em
+
+    .navhead
+        font-size: 1.5em
+
+    ul
+        list-style-type: none
+        display: inline-flex
+        
+        li
+            display: block
+            height: 100%
+            margin: 0 1em 0 1em
+            padding: 1em
+            &:hover
+                color: $red
+                background-color: white
+                cursor: pointer
+        

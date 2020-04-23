@@ -1,0 +1,65 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Merriweather:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Bebas Neue', Arial, Helvetica, sans-serif;
+}
+
+section {
+  height: 100vh;
+}
+
+section:nth-child(1) {
+  background-color: #ec3f3f;
+}
+
+section:nth-child(2) {
+  background-color: #2e2e2e;
+  color: white;
+}
+
+.nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+  padding: 1em;
+}
+
+.nav .navhead {
+  font-size: 1.5em;
+}
+
+.nav ul {
+  list-style-type: none;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.nav ul li {
+  display: block;
+  height: 100%;
+  margin: 0 1em 0 1em;
+  padding: 1em;
+}
+
+.nav ul li:hover {
+  color: #ec3f3f;
+  background-color: white;
+  cursor: pointer;
+}
+/*# sourceMappingURL=style.css.map */
